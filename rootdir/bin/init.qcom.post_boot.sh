@@ -4541,8 +4541,14 @@ case "$target" in
     arch_type=`uname -m`
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
-    if [ "$arch_type" == "aarch64" ] && [ $MemTotal -gt 5505024 ]; then
-        echo "18432,23040,27648,32256,85296,120640" > /sys/module/lowmemorykiller/parameters/minfree
+    if [ "$arch_type" == "aarch64" ]; then
+        if [ $MemTotal -gt 7602176 ]; then
+            echo "18432,23040,27648,45158,119414,168896" > /sys/module/lowmemorykiller/parameters/minfree
+        elif [ $MemTotal -gt 5505024 ]; then
+            echo "18432,23040,27648,38708,102356,144768" > /sys/module/lowmemorykiller/parameters/minfree
+        else
+            echo "18432,23040,27648,32256,55296,80640" > /sys/module/lowmemorykiller/parameters/minfree
+        fi
     fi
     ;;
 esac

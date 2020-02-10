@@ -2074,6 +2074,7 @@ vendor/app/TimeService/oat/arm64/TimeService.vdex
 vendor/bin/adpl
 vendor/bin/athdiag
 vendor/bin/batteryd
+vendor/bin/batterysecret
 vendor/bin/ccid_daemon
 vendor/bin/cplay
 vendor/bin/dc_cal
@@ -2188,6 +2189,7 @@ vendor/etc/init/wfdvndservice.rc
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
+vendor/etc/NOTICE_GPL.html.gz
 vendor/etc/pm_test_item_config.xml
 vendor/etc/rcv_ultrasound.wav
 vendor/etc/screen_light.xml

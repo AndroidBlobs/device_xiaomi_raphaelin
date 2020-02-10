@@ -295,5 +295,7 @@ persist.fod.modified.dc_status=false
 #enable RIL feature abot reporting data registration state
 persist.vendor.radio.data_con_rprt=1
 
+#quick charge type detect
+persist.quick.charge.detect=1
 
 #
